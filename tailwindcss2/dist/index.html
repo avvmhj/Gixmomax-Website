@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GizmoHub</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (min-width:1024px){
+      .mobile-menu{
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="font-serif bg-gradient-to-t from-[#515152] to-[#000000] h-screen">
+  <header class="">
+    <nav class="flex justify-between items-center w-[95%] ">
+      <div class="flex items-center">
+        <img class ='w-20' src="download.jpeg" alt="...">
+  
+          <h3 class="text-white">GizmoHub</h3>
+        
+      </div>
+      <div class="md:static text-white absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%%] md:w-auto w-full flex items-center px-[500px]">
+        <ul class="flex md:flex-row flex-col items-center md:gap-[4vw] gap-8">
+          <li>
+            <a class="hover:text-gray-400" href="#Home">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#product">Product</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    <div class="flex items-center gap-6">
+      <!-- <i class="ri-menu-line" class="text-3xl cursor-pointer"></i> -->
+      <i class="ri-menu-line text-white"></i>
+    </div>
+    </nav>
+
+</header>
+ <div class="opacity-60 float-right">
+  <img class="h-600 w-200 hover:scale-150 animate-pulse" src="vr.png" alt="">
+ </div>
+ <blockquote><p class="text-white mt-[100px] text-5xl font-family:  ui-serif, Georgia opacity-80 pl-[20px] text-justify p-20 m-10"> <span class="text-8xl text-gray-500">Step into the Future:</span> <br> Experience Reality Like Never Before with Our Cutting-Edge VR Technology!</p></blockquote>
+
+ <div>
+  <button class="bg-blue-400 rounded-3xl p-[5px] ml-[30px] mt-[50px] hover:bg-slate-600 text-white px-10 py-5">BUY NOW</button>
+ </div> 
+
+ <section id="product" class="bg-gradient-to-t from-[#515152] to-[#000000]  mt-[205px] py-16 px-8 md:px-24 text-white">
+<h2 class="text-3xl font-bold mb-8">Gizmomax</h2>
+<p class="mb-4">GizmoMax is the latest innovation in VR technology, offering a seamless and immersive experience like never before.<br> Key features include:</p>
+<ul class="list-disc list-inside mb-4">
+  <li>Ultra-high resolution display</li>
+  <li>Advanced motion Tracking</li>
+  <li>Lightweight and comfortable design</li>
+  <li>Long-lasting battery life</li>
+</ul>
+
+<!-- 
+<section class="flex flex-col items-center my-8"> -->
+  <div class="flex flex-row justify-center gap-4 " >
+    <img class="w-1/4 md:w-1/6 lg:w-1/8" src="img1.jpg" alt="GizmoMax Image 1">
+    <img class="w-1/4 md:w-1/6 lg:w-1/8" src="img2.jpg" alt="GizmoMax Image 2">
+    <img class="w-1/4 md:w-1/6 lg:w-1/8" src="img3.jpg" alt="GizmoMax Image 3">
+  </div>
+  <div class="flex flex-col items-center mt-4">
+    <span class="text-2xl font-bold mt-[50px]">$499.99</span>
+    <a href="#" class="bg-green-500 rounded-3xl py-2 px-6 hover:bg-green-700 text-white">BUY NOW</a>
+  </div>
+</section>
+
+
+
+ <section id="reviews" class="py-16 px-8 md:px-24">
+  <h2 class="text-3xl font-bold text-white mb-8">Customer Reviews</h2>
+  <div class="space-y-8">
+    <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg">
+      <p class="text-white mb-2">"The GizmoMax is an absolute game-changer! The immersion and clarity are unparalleled."</p>
+      <span class="text-gray-400">- Alex J.</span>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg">
+      <p class="text-white mb-2">"A fantastic product that delivers on all fronts. Highly recommend it!"</p>
+      <span class="text-gray-400">- Maria S.</span>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg">
+      <p class="text-white mb-2">"I was blown away by the quality and performance of GizmoMax."</p>
+      <span class="text-gray-400">- John D.</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bg-gradient-to-t from-[#515152] to-[#000000] y-16 px-8 md:px-24 text-white">
+  <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+  <form action="#" method="POST" class="space-y-6">
+    <div>
+      <label for="name" class="block mb-2">Name</label>
+      <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white" required>
+    </div>
+    <div>
+      <label for="email" class="block mb-2">Email</label>
+      <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white" required>
+    </div>
+    <div>
+      <label for="message" class="block mb-2">Message</label>
+      <textarea id="message" name="message" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white" rows="4" required></textarea>
+    </div>
+    <div>
+      <button type="submit" class="bg-green-500 rounded-3xl py-2 px-6 hover:bg-green-700 text-white">Send</button>
+    </div>
+  </form>
+</section>
+
+<footer class="bg-black bg-opacity-75 py-8 text-center text-white">
+  <div class="flex justify-center space-x-4 mb-4">
+    <a href="#" class="hover:text-gray-400"><i class="ri-facebook-line"></i></a>
+    <a href="#" class="hover:text-gray-400"><i class="ri-twitter-line"></i></a>
+    <a href="#" class="hover:text-gray-400"><i class="ri-instagram-line"></i></a>
+  </div>
+  <p>&copy; 2024 GizmoHub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
